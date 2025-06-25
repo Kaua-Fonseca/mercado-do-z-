@@ -4,7 +4,6 @@ produtos = []
 def carregar_estoque(produtos):
     try:
         with open('estoque.csv', 'r', encoding='utf-8') as arquivo:
-            cabecalho = arquivo.readline() 
             text = arquivo.read().split('\n')
             for linha in text:
                 partes = linha.split(',')
